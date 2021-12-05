@@ -1,0 +1,10 @@
+^C:\USERS\SANNI\DESKTOP\DEV\RAYTRACER\BUILD\CMAKEFILES\EF0A3C3567911FD582EA287B9CED4B77\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/sanni/Desktop/Dev/RayTracer -BC:/Users/sanni/Desktop/Dev/RayTracer/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/sanni/Desktop/Dev/RayTracer/build/RayTracer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
